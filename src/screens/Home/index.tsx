@@ -12,16 +12,18 @@ export function Home() {
             <Text style={styles.eventName}>Shibata Supermecados</Text>
             <Text style={styles.eventDate}>Sistema de loja</Text>
 
-            <TextInput
-                placeholder="Nome do participante"
-                placeholderTextColor={"#6B6B6B"}
-                keyboardType="default"
-                style={styles.input}
-            />
+            <View style={styles.form}>
+                <TextInput
+                    placeholder="Nome do participante"
+                    placeholderTextColor={"#6B6B6B"}
+                    keyboardType="default"
+                    style={styles.input}
+                />
 
-            <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-                <Text style={styles.buttonText}>+</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+                    <Text style={styles.buttonText}>+</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
